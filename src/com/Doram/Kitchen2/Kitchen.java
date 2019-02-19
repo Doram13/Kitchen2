@@ -13,6 +13,7 @@ public class Kitchen implements IngredientProvider, CookCaller {
     private Chef chef;
     private List<Cook> cookList = new LinkedList<>();
     private List<KitchenHelper> kitchenHelperList = new LinkedList<>();
+    private CookCaller cookCaller;
 
 
     public void hire(Employee employee) {
@@ -47,13 +48,14 @@ public class Kitchen implements IngredientProvider, CookCaller {
         kitchenHelperList.forEach(KitchenHelper::stockUp);
         for (int i = 0; i < 25; i++) {
             chefYells();
-            callCook();
+            //callCook();
         }
     }
 
     private void chefYells() {
         if (chef.askForIngredient(this)) {
             chef.cook();
+            chef.OrderCooksToCook(this);
         }
         else chef.outOfIngredient();
     }
