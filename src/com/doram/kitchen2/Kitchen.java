@@ -1,9 +1,9 @@
-package com.Doram.Kitchen2;
+package com.doram.kitchen2;
 
-import com.Doram.Kitchen2.employee.Chef;
-import com.Doram.Kitchen2.employee.Cook;
-import com.Doram.Kitchen2.employee.Employee;
-import com.Doram.Kitchen2.employee.KitchenHelper;
+import com.doram.kitchen2.employee.Chef;
+import com.doram.kitchen2.employee.Cook;
+import com.doram.kitchen2.employee.Employee;
+import com.doram.kitchen2.employee.KitchenHelper;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -13,7 +13,6 @@ public class Kitchen implements IngredientProvider, CookCaller {
     private Chef chef;
     private List<Cook> cookList = new LinkedList<>();
     private List<KitchenHelper> kitchenHelperList = new LinkedList<>();
-    private CookCaller cookCaller;
 
 
     public void hire(Employee employee) {
@@ -26,9 +25,7 @@ public class Kitchen implements IngredientProvider, CookCaller {
         if (employee instanceof KitchenHelper) {
             hire((KitchenHelper) employee);
         }
-
     }
-
 
     private void hire(Chef chef) {
         this.chef = chef;

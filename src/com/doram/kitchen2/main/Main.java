@@ -1,9 +1,9 @@
-package com.Doram.Kitchen2.main;
+package com.doram.kitchen2.main;
 
-import com.Doram.Kitchen2.Kitchen;
-import com.Doram.Kitchen2.employee.Chef;
-import com.Doram.Kitchen2.employee.Cook;
-import com.Doram.Kitchen2.employee.KitchenHelper;
+import com.doram.kitchen2.Kitchen;
+import com.doram.kitchen2.employee.Chef;
+import com.doram.kitchen2.employee.Cook;
+import com.doram.kitchen2.employee.KitchenHelper;
 
 public class Main {
 

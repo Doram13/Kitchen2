@@ -1,11 +1,9 @@
-package com.Doram.Kitchen2.employee;
+package com.doram.kitchen2.employee;
 
-import com.Doram.Kitchen2.CookCaller;
-import com.Doram.Kitchen2.Cooker;
-import com.Doram.Kitchen2.Ingredient;
-import com.Doram.Kitchen2.IngredientProvider;
-
-import java.util.Optional;
+import com.doram.kitchen2.CookCaller;
+import com.doram.kitchen2.Cooker;
+import com.doram.kitchen2.Ingredient;
+import com.doram.kitchen2.IngredientProvider;
 
 public class Chef extends Employee implements Cooker {
   //  private Optional<IngredientProvider> provider = Optional.empty();
@@ -37,6 +35,7 @@ public class Chef extends Employee implements Cooker {
      }
 
      public void OrderCooksToCook(CookCaller cookCaller) {
+         System.out.println(name + " yells to Cooks to cook!");
         cookCaller.callCook();
      }
 

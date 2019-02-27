@@ -1,4 +1,4 @@
-package com.Doram.Kitchen2;
+package com.doram.kitchen2;
 
 import java.util.Random;
 

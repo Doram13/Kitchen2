@@ -1,6 +1,6 @@
-package com.Doram.Kitchen2.employee;
+package com.doram.kitchen2.employee;
 
-import com.Doram.Kitchen2.Cooker;
+import com.doram.kitchen2.Cooker;
 
 public class Cook extends Employee implements Cooker {
     private boolean gotKnifeSet = false;

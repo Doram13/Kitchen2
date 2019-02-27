@@ -1,4 +1,4 @@
-package com.Doram.Kitchen2.employee;
+package com.doram.kitchen2.employee;
 
 public abstract class Employee {
     protected String name;

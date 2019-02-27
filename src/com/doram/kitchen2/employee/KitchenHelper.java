@@ -1,6 +1,6 @@
-package com.Doram.Kitchen2.employee;
+package com.doram.kitchen2.employee;
 
-import com.Doram.Kitchen2.Ingredient;
+import com.doram.kitchen2.Ingredient;
 
 import java.util.HashMap;
 import java.util.Map;
